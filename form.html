@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="navigation.css" type="text/css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico"/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div id="navigation_placeholder"></div>
+
+    <div id="wrapper">
+        <div class="form">
+            <form action="/does_not_exist.php" method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Voornaam</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="firstname" placeholder="Voornaam..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Achternaam</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="lastname" placeholder="Achternaam..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" placeholder="Email adres..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Bericht</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="message" placeholder="Plaats hier uw tekst.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Verstuur">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $.get("navigation.html", function(data){
+            $("#navigation_placeholder").replaceWith(data);
+        });
+    </script>
+</body>
+</html>

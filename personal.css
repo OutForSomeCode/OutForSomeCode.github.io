@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    height: 100%;
+    background-image: url(/images/brickwall.png);
+    font-family: 'roboto', sans-serif; 
+}
+.itabel {
+    margin-top: 118px;
+    width: 800px;
+}
+.itabel th {
+    width: 40%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+.itabel td {
+    width: 60%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+
+.itabel2 {
+    margin-top: 25px;
+    width: 800px;
+}
+.itabel2 td img {
+    height: 25px;
+}
+.itabel2 th {
+    width: 40%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+.itabel2 td {
+    width: 60%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+.itabel2 :nth-child(even) > th {
+    background-color: grey;
+}
+.itabel2 :hover > td {
+    background-color: #805be6; 
+}
