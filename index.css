@@ -7,3 +7,32 @@ body {
     background-image: url(/images/brickwall.png);
     font-family: 'roboto', sans-serif; 
 }
+
+h5 {
+    display: inline;
+}
+
+.tabel {
+    margin-top: 10px;
+    width: 800px;
+}
+.Text {
+    margin-top: 50px;
+    width: 800px;
+}
+
+.tabel tr :nth-child(even) {
+    width: 10%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+.tabel tr :nth-child(odd) {
+    width: 40%;
+    border: 1px solid red;
+    text-align: left;
+    padding: 12px;
+}
+.tabel :hover > td {
+    background-color: #805be6; 
+}
